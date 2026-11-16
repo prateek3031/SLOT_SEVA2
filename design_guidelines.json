@@ -1,0 +1,239 @@
+{
+  "theme_strategy": {
+    "mode": "dark-dominant",
+    "rationale": "Exact execution of user-specified Phosdeep aesthetic (https://phosdeep.com/): dark terminal-futuristic, high-contrast monochrome substrate, phosphor emerald (#00FF66 / #10B981) + amber alert accents, 1px hairline wireframe borders, monospace data bays, index numbers (01-06), glyphs (◈ ✦ ◎ ↗), scanline ambiance, and sharp precision geometry suited for Indian local clinics booking engine.",
+    "locale": {
+      "country": "India (IN)",
+      "currency": "INR (₹)",
+      "date_format": "dd MMM yyyy, HH:mm",
+      "phone_prefix": "+91"
+    }
+  },
+  "typography": {
+    "font_family_heading": "Space Grotesk Variable, sans-serif",
+    "font_family_body": "JetBrains Mono Variable, monospace",
+    "font_family_mono": "JetBrains Mono Variable, monospace",
+    "import_declaration": "@import \"@fontsource-variable/space-grotesk\";\n@import \"@fontsource-variable/jetbrains-mono\";",
+    "scale_px": {
+      "display": 56,
+      "h1": 44,
+      "h2": 32,
+      "h3": 22,
+      "body": 16,
+      "caption": 14
+    },
+    "typesetting_rules": {
+      "headings": "uppercase, tracking-tight (tracking-[-0.03em]), font-bold / font-semibold",
+      "micro_labels": "uppercase, text-xs, tracking-[0.25em], font-mono, text-emerald-400/80 or text-zinc-400",
+      "body_copy": "leading-relaxed, tracking-normal, max tracking 0.04em, text-zinc-300",
+      "numerics_and_prices": "font-mono font-bold tracking-tight text-zinc-100",
+      "terminal_prompts": "font-mono text-xs before:content-['>_'] before:mr-1.5 before:text-emerald-400"
+    }
+  },
+  "colors": {
+    "surfaces": [
+      {
+        "name": "page",
+        "kind": "solid",
+        "bg": "#090A0F",
+        "on_bg": "#F4F4F5",
+        "on_bg_muted": "#A1A1AA",
+        "roles": {
+          "link": "#10B981",
+          "accent_highlight": "#00FF66",
+          "terminal_amber": "#F59E0B",
+          "border_hairline": "rgba(255, 255, 255, 0.12)"
+        }
+      },
+      {
+        "name": "panel",
+        "kind": "solid",
+        "bg": "#10121B",
+        "on_bg": "#F4F4F5",
+        "on_bg_muted": "#9CA3AF",
+        "roles": {
+          "border": "rgba(255, 255, 255, 0.14)",
+          "badge_bg": "rgba(16, 185, 129, 0.12)",
+          "badge_text": "#34D399"
+        }
+      },
+      {
+        "name": "panel_elevated",
+        "kind": "solid",
+        "bg": "#171A26",
+        "on_bg": "#FAFAFA",
+        "on_bg_muted": "#A1A1AA",
+        "roles": {
+          "border": "rgba(16, 185, 129, 0.35)",
+          "active_slot": "#059669"
+        }
+      },
+      {
+        "name": "hero",
+        "kind": "image",
+        "contrast_against": "#0A0C13",
+        "guarantee": "scrim: linear-gradient(180deg, rgba(9, 10, 15, 0.88) 0%, rgba(9, 10, 15, 0.96) 100%)",
+        "on_bg": "#F9FAFB",
+        "on_bg_muted": "#9CA3AF",
+        "roles": {
+          "link": "#34D399",
+          "error": "#F87171",
+          "success": "#34D399"
+        }
+      },
+      {
+        "name": "crystal_nav",
+        "kind": "glass",
+        "contrast_against": "#090A0F",
+        "guarantee": "backdrop-blur-xl bg-[#090A0F]/85 border-b border-white/12",
+        "on_bg": "#F4F4F5",
+        "on_bg_muted": "#9CA3AF"
+      },
+      {
+        "name": "inverse",
+        "kind": "solid",
+        "bg": "#F4F4F5",
+        "on_bg": "#090A0F",
+        "on_bg_muted": "#3F3F46"
+      },
+      {
+        "name": "mock_badge",
+        "kind": "solid",
+        "bg": "rgba(245, 158, 11, 0.15)",
+        "on_bg": "#FBBF24",
+        "on_bg_muted": "#F59E0B"
+      }
+    ],
+    "accent": "#10B981",
+    "on_accent": "#000000",
+    "status": {
+      "online_green": "#10B981",
+      "mock_amber": "#F59E0B",
+      "alert_red": "#EF4444",
+      "cyan_info": "#06B6D4"
+    }
+  },
+  "entry_surfaces": {
+    "/": "phosdeep terminal landing hero — uppercase monospace header with status 'SYS // SLOTSEVA ● ONLINE', left-aligned bold headline + quick clinic finder bay, index directory row 01-06 right, seeded doctor matrix below",
+    "/login": "branded split terminal login — clinic telemetry & live slot status panel left, email/password + instant Google sign-in auth card right with hairline grid borders",
+    "/signup": "branded split terminal registration — clinic network badge & patient/doctor role switch panel left, structured registration form right",
+    "/doctors": "terminal directory — sticky filter matrix (specialisation, city, fee, search) top/left, structured doctor telemetry cards with live availability badges right",
+    "/doctor/:id": "split doctor terminal — clinician profile + clinic address left, interactive calendar + time-slot selector bay right leading to booking CTA",
+    "/checkout": "terminal transaction console — booking summary & patient details left, MOCKED instant payment simulator (UPI, Card, NetBanking ₹ INR) right with live confirmation trigger",
+    "/patient/dashboard": "patient terminal console — active appointment passports, booking history timeline, instant cancellation & AI triage recommendations drawer",
+    "/doctor/dashboard": "clinician command center — today's queue schedule with slot statuses (CONFIRMED/COMPLETED/CANCELLED), slot availability manager, and revenue summary"
+  },
+  "visual_enhancers": {
+    "phosdeep_elements": [
+      "Micro-header sys tags: 'SYS // SLOTSEVA ● ONLINE', 'LOC // IND-DEL-MUM-BLR', 'STAT // CLINICS_ACTIVE: 42'",
+      "Index counter headers: '01 / CLINIC MATRIX', '02 / DOCTOR DISCOVERY', '03 / DIRECT RESERVATION', '04 / TELEMETRY DASHBOARD'",
+      "Glyph ornaments: ◈ ✦ ◎ ↗ ⊞ ⚡",
+      "Hairline technical grid: 'border border-white/10 divide-y divide-white/10'",
+      "Subtle CRT Scanline background overlay on dark surface via css repeating linear gradient",
+      "Corner bracket accents: 'relative before:absolute before:top-0 before:left-0 before:w-2 before:h-2 before:border-t-2 before:border-l-2 before:border-emerald-500'",
+      "MOCKED demo payment pill tag in high-visibility amber with pulsing dot"
+    ]
+  },
+  "motion": {
+    "library": "motion (framer-motion compatible)",
+    "rules": {
+      "transitions": "transition: border-color 0.2s ease, background-color 0.2s ease, opacity 0.2s ease",
+      "no_universal_transition": "NEVER use transition: all",
+      "stagger": "staggerChildren: 0.06 on doctor grid and appointment slots",
+      "reduced_motion": "Wrap animations with prefers-reduced-motion checks"
+    }
+  },
+  "accessibility": {
+    "contrast_target": "WCAG AA minimum 4.5:1 for all text vs dark surfaces (#F4F4F5 and #9CA3AF on #090A0F and #10121B exceed 7:1 and 4.8:1)",
+    "focus_states": "focus-visible:ring-2 focus-visible:ring-emerald-400 focus-visible:ring-offset-2 focus-visible:ring-offset-[#090A0F] focus-visible:outline-none",
+    "screen_readers": "aria-live for slot availability updates and AI triage recommendations, aria-label on all glyph buttons and icon triggers",
+    "testing_attributes": "All interactive elements (buttons, inputs, select triggers, cards, slot pills, tabs, badges) MUST include data-testid attribute in kebab-case"
+  },
+  "image_urls": {
+    "doctors": [
+      {
+        "id": "doc-1",
+        "name": "Dr. Rajesh Kulkarni",
+        "specialisation": "General Physician & Internal Medicine",
+        "image_url": "https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwxfHxkb2N0b3IlMjBwb3J0cmFpdCUyMHN0ZXRob3Njb3BlfGVufDB8fHx8MTc5NDI1NzUzOHww&ixlib=rb-4.1.0&q=85",
+        "description": "Experienced male doctor with spectacles and stethoscope in white apron",
+        "usage": "Doctor profile cards, doctor details page, top-rated specialist banner"
+      },
+      {
+        "id": "doc-2",
+        "name": "Dr. Ananya Sharma",
+        "specialisation": "Cardiologist",
+        "image_url": "https://images.unsplash.com/photo-1659353888906-adb3e0041693?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwyfHxkb2N0b3IlMjBwb3J0cmFpdCUyMHN0ZXRob3Njb3BlfGVufDB8fHx8MTc5NDI1NzUzOHww&ixlib=rb-4.1.0&q=85",
+        "description": "Female senior clinician in white lab coat with confident warm posture",
+        "usage": "Doctor profile cards, doctor details page, cardiology featured"
+      },
+      {
+        "id": "doc-3",
+        "name": "Dr. Vikramaditya Sen",
+        "specialisation": "Orthopedic & Sports Medicine",
+        "image_url": "https://images.unsplash.com/photo-1637059824899-a441006a6875?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHwzfHxkb2N0b3IlMjBwb3J0cmFpdCUyMHN0ZXRob3Njb3BlfGVufDB8fHx8MTc5NDI1NzUzOHww&ixlib=rb-4.1.0&q=85",
+        "description": "Male specialist in formal white shirt with stethoscope standing in hospital corridor",
+        "usage": "Doctor profile cards, orthopedic category, doctor dashboard sample"
+      },
+      {
+        "id": "doc-4",
+        "name": "Dr. Meera Nambiar",
+        "specialisation": "Dermatologist & Cosmetologist",
+        "image_url": "https://images.unsplash.com/photo-1638202993928-7267aad84c31?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2NzB8MHwxfHNlYXJjaHw0fHxkb2N0b3IlMjBwb3J0cmFpdCUyMHN0ZXRob3Njb3BlfGVufDB8fHx8MTc5NDI1NzUzOHww&ixlib=rb-4.1.0&q=85",
+        "description": "Female doctor holding stethoscope in modern clinical attire",
+        "usage": "Doctor profile cards, dermatology section, AI match recommendation"
+      },
+      {
+        "id": "doc-5",
+        "name": "Dr. Arvind Patel",
+        "specialisation": "Pediatrician & Child Health",
+        "image_url": "https://images.unsplash.com/photo-1631217868264-e5b90bb7e133?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NDk1NzZ8MHwxfHNlYXJjaHwxfHxkb2N0b3IlMjBjb25zdWx0aW5nJTIwcGF0aWVudCUyMG1lZGljYWx8ZW58MHx8fHwxNzk0MjU3NTMxfDA&ixlib=rb-4.1.0&q=85",
+        "description": "Doctor consulting warmly with patient in pediatric clinic",
+        "usage": "Doctor profile cards, pediatrics highlight"
+      }
+    ],
+    "clinics": [
+      {
+        "id": "clinic-1",
+        "name": "Aarogya PolyClinic & Diagnostics",
+        "image_url": "https://images.unsplash.com/photo-1629909614456-6b1c5c94cecc?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDV8MHwxfHNlYXJjaHwzfHxtZWRpY2FsJTIwY2xpbmljJTIwaW50ZXJpb3IlMjBtb2Rlcm58ZW58MHx8fHwxNzk0MjU3NTM4fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Modern clinic reception and waiting lounge",
+        "usage": "Clinic visual backdrop, location info card"
+      },
+      {
+        "id": "clinic-2",
+        "name": "Spandan Medicare Center",
+        "image_url": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDV8MHwxfHNlYXJjaHwyfHxtZWRpY2FsJTIwY2xpbmljJTIwaW50ZXJpb3IlMjBtb2Rlcm58ZW58MHx8fHwxNzk0MjU3NTM4fDA&ixlib=rb-4.1.0&q=85",
+        "description": "Spacious healthcare reception with digital signage",
+        "usage": "Clinic profile, consultation room visual"
+      }
+    ]
+  },
+  "layouts_and_grids": {
+    "header_nav": "Fixed/Sticky crystal glass navigation (h-16, backdrop-blur-xl bg-[#090A0F]/90 border-b border-white/10 z-50 px-4 md:px-8). Contains: Logo 'SLOT SEVA ◈' + sys indicator 'SYS // ONLINE' + Nav Links [Doctors, Specialisations, How It Works] + Action cluster [AI Triage Button '✦ SYMPTOM AI', Sign In / Dashboard CTA]",
+    "hero_section": "Asymmetric Phosdeep grid (lg:grid-cols-12 gap-8 py-12 md:py-20). Left (col-span-7): Monospace telemetry overline + massive uppercase headline 'INSTANT APPOINTMENTS // LOCAL CLINICS' + quick search bay + live stats. Right (col-span-5): 01-04 index directory matrix with interactive clinic counters and direct filter jumps.",
+    "doctor_directory_grid": "Split layout with sticky filter bay on desktop (w-72 border-r border-white/10 p-6) + 2-3 column doctor telemetry cards with sharp 0-2px radii, 1px hairline borders, instant slot chips, fee in ₹ INR, and ↗ profile links.",
+    "booking_flow_split": "Doctor info panel left (doctor image, clinic credentials, fee breakdown, map location) + Date selector and Time-bay selector right (Morning/Afternoon/Evening slots with 'AVAILABLE / FAST FILLING / BOOKED' badges) + Proceed to Checkout button.",
+    "checkout_modal_or_page": "Structured terminal receipt: Clinic & Doctor info, Date/Time slot, Patient details, ₹ Consultation fee + GST calculation, MOCKED badge prominent banner, interactive dummy payment selection (UPI / QR / Cards / NetBanking) and instant confirmation trigger.",
+    "ai_chatbot_drawer": "Slide-over terminal drawer (Sheet component from shadcn): 'SLOT SEVA // AI CLINICAL TRIAGE ASSISTANT'. Patients describe symptoms (e.g. 'sharp chest pain on left side' or 'persistent skin rash after sun exposure'), AI parses urgency, maps to exact medical specialisation (Cardiology, Dermatology, etc.), and outputs matched pre-seeded doctors with direct 1-click 'Book Slot' buttons."
+  },
+  "instructions_to_main_agent": [
+    "Template is farm-ts (FastAPI backend at :8001 + React 19 frontend at :3000). Use the typed fetch client in frontend/src/lib/api.ts for all endpoint communications.",
+    "Set dark mode as default by ensuring 'dark' class is present on html or index.css.",
+    "Implement the Phosdeep aesthetic faithfully: deep obsidian background (#090A0F), Space Grotesk uppercase display headings, JetBrains Mono body & micro-labels, hairline 1px borders (border-white/10 or border-white/15), numbered index rows (01, 02, 03), tech glyphs (◈, ✦, ◎, ↗), and phosphor emerald accents (#10B981 / #00FF66).",
+    "Pre-seed doctors in backend/seed.py with realistic Indian clinic profiles: Delhi (South Ext, Rohini), Mumbai (Bandra, Andheri), Bengaluru (Indiranagar, Koramangala), Pune, Hyderabad with diverse specialisations (Cardiology, Dermatology, General Physician, Pediatrics, Orthopedics, ENT, Neurology, Gynecology) and open time slots for today and upcoming 7 days.",
+    "Include both Patient and Doctor authentication: Email + Password login/signup AND simulated Google Sign-In with 1-click instant login ('Continue with Google').",
+    "Support two distinct role experiences: (1) Patient view (search, filter, AI assistant, book slot, view & cancel appointments); (2) Doctor view (switch to Doctor portal, view daily consultation queue, mark status as Completed/Cancelled, toggle slot availability).",
+    "Demo Payment Page: Must clearly display 'DEMO PAYMENT SIMULATOR (MOCKED)' in amber badge, show ₹ INR pricing, allow dummy UPI/Card selection, and instantly confirm booking with downloadable/viewable appointment pass with QR mock and booking reference (e.g. 'SS-2026-8942').",
+    "AI Chatbot Drawer: Implement an interactive Symptom-to-Doctor Recommender (via backend FastAPI endpoint or smart client-side matching engine) that takes user input, classifies symptom urgency, suggests relevant doctor specialization, and renders direct doctor cards with 'Book Slot' actions.",
+    "Include data-testid on every interactive button, input, tab, filter pill, and appointment card for comprehensive Playwright testing."
+  ],
+  "universal_guidelines_for_main_agent": [
+    "Avoid AI slop: do not create generic soft-pill blue SaaS cards. Deliver the razor-sharp, dark terminal aesthetic requested with meticulous attention to typography hierarchy.",
+    "Never use dark color gradients. Use flat solid near-black backgrounds (#090A0F, #10121B, #171A26) with crisp 1px borders.",
+    "Never apply universal 'transition: all' which breaks transforms. Use specific transitions like 'transition: border-color 0.2s ease, background-color 0.2s ease'.",
+    "Ensure all text colors meet APCA/WCAG contrast ratios (4.5:1 minimum on dark backgrounds).",
+    "Ensure generous padding inside all bordered containers (p-6 or p-8) to prevent text collision.",
+    "All currency must be formatted in Indian Rupees (₹) with standard Indian numbering where appropriate (e.g., ₹500, ₹1,200)."
+  ]
+}
